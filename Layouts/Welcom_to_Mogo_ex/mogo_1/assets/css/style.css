@@ -48,14 +48,17 @@ hr {
     z-index: 1000;
 }
 
-.header--fixed {
+.header.fixed {
     padding: 10px 0px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #e47172;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header.active {
+    background-color: #e47172;
 }
 
 .header_inner {
@@ -124,7 +127,7 @@ hr {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 1; 
+    z-index: 1;
     font-size: 0;
     color: transparent;
     border: 0;
@@ -132,8 +135,21 @@ hr {
     cursor: pointer;
 }
 
+.nav-togle.active .nav-togle__item {
+    background: none;
+}
+
+.nav-togle.active .nav-togle__item::before {
+    transform: rotate(45deg) translateX(-2px);
+    transform-origin: left top;
+}
+
+.nav-togle.active .nav-togle__item::after {
+    transform: rotate(-45deg) translateX(-1.5px);
+    transform-origin: left bottom;
+}
+
 .nav-togle__item {
-   
     width: 100%;
     height: 3px;
     display: block;
@@ -144,6 +160,7 @@ hr {
     right: 0;
     left: 0;
     margin: auto;
+    transition: background 0.2s linear;
 }
 
 .nav-togle__item::before, .nav-togle__item::after {
@@ -155,6 +172,7 @@ hr {
     background-color: #fff;
     left: 0;
     z-index: 1;
+    transition: transform 0.2s linear;
 }
 
 .nav-togle__item::after {
@@ -255,8 +273,9 @@ hr {
     position: relative;
 }
 
-.slider__item.active {
+.slider__item.active:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .slider__item.active::before {
@@ -1275,9 +1294,19 @@ hr {
     }
     /* nav */
     .nav {
-        display: none
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #e47172;
     }
-    .nav-togle{
+    .nav_link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+    .nav-togle {
         display: block;
     }
     /* card */
