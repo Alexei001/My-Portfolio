@@ -71,6 +71,10 @@ hr {
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
+    cursor: pointer;
+}
+.header_logo:hover{
+    color: #fce38a;
 }
 
 .nav {
@@ -134,19 +138,24 @@ hr {
     background: none;
     cursor: pointer;
 }
-
+.nav-togle:focus{
+    outline: none;
+}
 .nav-togle.active .nav-togle__item {
     background: none;
+    
 }
 
 .nav-togle.active .nav-togle__item::before {
     transform: rotate(45deg) translateX(-2px);
     transform-origin: left top;
+    background-color: #fce38a;
 }
 
 .nav-togle.active .nav-togle__item::after {
     transform: rotate(-45deg) translateX(-1.5px);
     transform-origin: left bottom;
+    background-color: #fce38a;
 }
 
 .nav-togle__item {
@@ -608,8 +617,12 @@ hr {
 }
 
 .reviews__item {
+    display: none;
     padding-left: 255px;
     position: relative;
+}
+.reviews__item.active{
+    display: block;
 }
 
 .reviews__photo {
@@ -1300,6 +1313,9 @@ hr {
         top: 100%;
         left: 0;
         background-color: #e47172;
+    }
+    .nav.active{
+        display: block;
     }
     .nav_link {
         display: block;

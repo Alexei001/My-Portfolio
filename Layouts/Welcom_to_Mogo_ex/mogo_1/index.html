@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <title>Mogo</title>
 </head>
 
@@ -15,8 +17,8 @@
     <header class="header " id="header">
         <div class="container">
             <div class="header_inner">
-                <div class="header_logo">MoGo</div>
-                <nav class="nav">
+                <a class="header_logo" data-scroll="#intro">MoGo</a>
+                <nav class="nav" id="nav">
                     <a class="nav_link " href="#" data-scroll="#about">About</a>
                     <a class="nav_link " href="#" data-scroll="#service">service</a>
                     <a class="nav_link " href="#" data-scroll="#work">work</a>
@@ -44,14 +46,14 @@
                 <h1 class="intro__title">
                     Welcome <br>
                     to MoGo</h1>
-                <a class="btn"  id="learn_more">Learn More</a>
+                <a class="btn" id="learn_more">Learn More</a>
             </div>
         </div>
 
         <div class="slider">
             <div class="container">
                 <div class="slider__inner">
-                    <div class="slider__item ">
+                    <div class="slider__item active">
                         <span class="slider__num">01</span>
                         <span class="slider__text">Intro</span>
                     </div>
@@ -296,15 +298,29 @@
     <div class="section section--gray">
         <div class="container">
             <div class="reviews">
-                <a class="reviews__btn  reviews__btn--prev" href="#">prev</a>
-                <a class="reviews__btn  reviews__btn--next" href="#">next</a>
+                <a class="reviews__btn  reviews__btn--prev" href="#" id="prev">prev</a>
+                <a class="reviews__btn  reviews__btn--next" href="#" id="next">next</a>
 
+                <div class="reviews__item active">
+                    <img class="reviews__photo" src="./assets/images/reviews_icon2.jpg" alt="#">
+                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation.”</div>
+                    <div class="reviews__author">Jon Doe1</div>
+                </div>
                 <div class="reviews__item">
                     <img class="reviews__photo" src="./assets/images/reviews_icon2.jpg" alt="#">
                     <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation.”</div>
-                    <div class="reviews__author">Jon Doe</div>
+                    <div class="reviews__author">Jon Doe2</div>
+                </div>
+                <div class="reviews__item">
+                    <img class="reviews__photo" src="./assets/images/reviews_icon2.jpg" alt="#">
+                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation.”</div>
+                    <div class="reviews__author">Jon Doe3</div>
                 </div>
             </div>
         </div>
@@ -428,7 +444,7 @@
         </div>
     </div><!-- sectio__logo -->
 
-    <section class="section">
+    <section class="section" id="work">
         <div class="container">
 
             <div class="section__header">
@@ -577,7 +593,7 @@
         </div>
     </section><!-- ./clients happy -->
 
-    <section class="section">
+    <section class="section" id="blog">
         <div class="container">
 
             <div class="section__header">
@@ -711,7 +727,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
 
             <div class="footer__inner">
@@ -847,7 +863,6 @@
         </div><!-- ./container -->
     </footer>
     <script src="./js/main.js"></script>
-    <script src="https://kit.fontawesome.com/2b3072c66a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
