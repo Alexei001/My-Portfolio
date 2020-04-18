@@ -76,17 +76,32 @@ for(let item of acordion){
     })
 }
 
-/* reviews carousel*/
+/* reviews slider*/
 
-let reviewsArr=document.querySelectorAll('.reviews__item');
-let prev=document.getElementById('prev');
-let next=document.getElementById('next');
- prev.addEventListener('click', func=(event)=>{
-    event.preventDefault();
-     console.log('prev')
- })
-  
-next.addEventListener('click', func=(event)=>{
-    event.preventDefault();
-    console.log('next')
-})
+var slideIndex=1;
+showSlides(slideIndex);
+function sliderPlus(n){
+    showSlides(slideIndex+=n);
+}
+
+function curentSlide(n){
+    showSlides(slideIndex=n);
+}
+
+function showSlides(n){
+    var i;
+    var arrItem=document.getElementsByClassName('reviews__item'); 
+    var arrItems2=document.getElementsByClassName('reviews__items2'); 
+     if (n > arrItem.length) {slideIndex = 1}    
+     if (n > arrItems2.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = arrItem.length}
+    if (n < 1) {slideIndex = arrItems2.length}
+    for (i = 0; i < arrItem.length; i++) {
+        arrItem[i].style.display = "none";  
+    }
+    for (i = 0; i < arrItems2.length; i++) {
+        arrItems2[i].style.display = "none";  
+    }
+    arrItem[slideIndex-1].style.display = "block";   
+    arrItems2[slideIndex-1].style.display = "block";   
+}

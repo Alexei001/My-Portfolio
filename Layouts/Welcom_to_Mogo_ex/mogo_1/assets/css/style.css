@@ -617,14 +617,15 @@ hr {
 }
 
 .reviews__item {
-    display: none;
     padding-left: 255px;
     position: relative;
+    outline: none;
 }
-.reviews__item.active{
-    display: block;
+.reviews__items2 {
+    padding-left: 255px;
+    position: relative;
+    outline: none;
 }
-
 .reviews__photo {
     display: block;
     width: 210px;
@@ -667,6 +668,7 @@ hr {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    cursor: pointer;
 }
 
 .reviews__btn::after {
@@ -1261,6 +1263,9 @@ hr {
     .reviews__item {
         padding-left: 180px;
     }
+    .reviews__items2 {
+        padding-left: 180px;
+    }
     .reviews__photo {
         width: 150px;
         height: 150px;
@@ -1378,6 +1383,9 @@ hr {
         margin: 0 auto 20px;
     }
     .reviews__item {
+        padding-left: 0;
+    }
+    .reviews__items2 {
         padding-left: 0;
     }
     .reviews__text {
