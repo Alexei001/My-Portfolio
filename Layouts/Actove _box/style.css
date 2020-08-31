@@ -19,8 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1175px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header++++++++++++++++++++ */
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -130,7 +131,221 @@ h1, h2, h3, h4, h5, h6 {
 .btn--red:hover {
     background-color: #e84545;
     opacity: 0.75;
-    
+}
+
+/* Features++++++++++++++++++++ */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px 0;
+}
+
+.features__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.features__icon {
+    margin-bottom: 30px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features__text {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* works++++++++++++++++++++ */
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    width: 25%;
+    height: 350px;
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+}
+
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e84545;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.works__content:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s linear;
+}
+
+.works__title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-weight: 400;
+}
+
+/* Team++++++++++++++++++++ */
+
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team__title {
+    margin-bottom: 16px;
+    color: #2d3033;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.team__subtitle {
+    margin-bottom: 25px;
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.team__text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.team__social {}
+
+/* Social++++++++++++++++++++ */
+
+.social {
+    display: flex;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 4px;
+    transition: background-color 0.1s linear;
+}
+
+.social__link:hover {
+    background-color: #e8ecee;
+}
+
+.social__icon {
+    display: block;
+    fill: #c6cacc;
+    height: 19px;
+    transition: fill 0.1s linear;
+}
+
+.social__link:hover .social__icon {
+    fill: #ffffff;
+}
+
+/* Testimonials++++++++++++++++++++ */
+
+.testimonials {
+    background-color: #53354a;
+}
+
+.testimonials__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials__photo {
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+
+.testimonials__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.testimonials__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.testimonials__text {
+    color: #ffffff;
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.testimonials__author {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
 }
 
 /* 
