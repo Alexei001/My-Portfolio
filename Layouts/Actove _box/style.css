@@ -272,6 +272,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
+.social--footer {
+    justify-content: center;
+}
+
 .social__link {
     display: flex;
     justify-content: center;
@@ -283,8 +287,21 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.1s linear;
 }
 
+.social--footer .social__link {
+    border-width: 2px;
+    border-color: #ffffff;
+}
+
 .social__link:hover {
     background-color: #e8ecee;
+}
+
+.social--footer .social__icon {
+    fill: #ffffff;
+}
+
+.social--footer .social__link:hover .social__icon {
+    fill: #3a3e64;
 }
 
 .social__icon {
@@ -348,6 +365,102 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+/* Download++++++++++++++++++++ */
+
+.download {
+    margin: 100px 0;
+}
+
+.download__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download__title {
+    color: #2d3033;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 0.75;
+    margin-bottom: 16px;
+}
+
+.download__subtitle {
+    margin-bottom: 35px;
+    color: #2d3033;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.61;
+    text-transform: uppercase;
+}
+
+.btn--down {
+    padding: 15px 65px;
+}
+
+/* footer++++++++++++++++++++ */
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+}
+
+.footer__block {
+    text-align: center;
+    width: 33.3333%;
+    padding: 0 10px;
+}
+
+.footer__title {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.footer__adress {
+    opacity: 0.5;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.footer__text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer__text p {
+    margin: 0;
+}
+
+/* Copyright++++++++++++++++++++ */
+
+.copyright {
+    background-color: #313454;
+    padding: 30px 0;
+}
+
+.copyright__text {
+    text-align:center;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.copyright__text span{
+    color: #a8aab7;
+    font-weight: 500;
+}
 /* 
 font-family: 'Cardo', serif;
 font-family: 'Open Sans', sans-serif;
