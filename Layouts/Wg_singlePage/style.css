@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #6c7279;
+    background-color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+
+/* Container */
+
+.container {
+    max-width: 836px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    height: 800px;
+    background: #2e314b url("img/bacgr.png") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__logo {
+    margin: 70px 0;
+    max-width: 273px;
+}
+
+.intro__logo img {
+    width: 100%;
+    height: auto;
+}
+
+.intro__title {
+    max-width: 675px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+}
+
+.intro__title span {
+    font-weight: 700;
+}
+
+.intro__zipCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 334px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28), 0 0 3px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+}
+
+.zip__code {
+    color: #b4adad;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 11px 113px 9px 15px;
+    margin: 31px 0 24px 0;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.09);
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.zipcode__icons {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.zipcode__text {
+    color: #938e8e;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.zipcode__button {
+    margin-bottom: 25px;
+    padding: 12px 38px;
+    background-color: #227dd3;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 50.73px;
+    text-transform: uppercase;
+}
