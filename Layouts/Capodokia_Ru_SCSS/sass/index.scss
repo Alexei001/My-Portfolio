@@ -1,6 +1,18 @@
-body{
-    background-color: #fff;
-    li{
-        color: yellow;
-    }
+@import "intro.scss";
+
+$black: #000000;
+$yellow: #e2ab3f;
+$white: #ffffff;
+$grey: #e5e5e5;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url("/images/Background.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
