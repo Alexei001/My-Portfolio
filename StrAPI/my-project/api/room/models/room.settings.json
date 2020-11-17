@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "Room"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "uid": {
+      "type": "uid"
+    },
+    "max_users": {
+      "type": "integer"
+    },
+    "stake": {
+      "type": "integer"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "users"
+    }
+  }
+}
