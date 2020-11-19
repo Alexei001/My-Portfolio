@@ -1,3 +1,8 @@
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 body {
     margin: 0;
     font-size: 14px;
@@ -13,4 +18,246 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* logo */
+
+.header_bg {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 0 0 70px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 6px solid #f4d4a5;
+    text-align: center;
+}
+.logo_img{
+    padding-bottom: 16px;
+}
+.logo_title {
+    text-transform: uppercase;
+    color: #bf4200;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+.logo_phone {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.logo_text {
+    color: #1fad26;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo_gift img {
+    width: 170px;
+    height: auto;
+}
+
+/* content_styles */
+
+.content {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.content_title {
+    color: #d0662d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: normal;
+    margin-bottom: 70px;
+}
+
+.content_subtitle, .content_inner_title, .content_inner_text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.content_inner_title {
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.garanty_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 32px;
+    margin: 40px 0 75px 0;
+}
+
+.garanty_images {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* content========= */
+
+.inner {
+    color: #000000;
+}
+
+.inner_title {
+    color: #d0662d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.item_title {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+}
+
+.item_text {
+    margin-bottom: 15px;
+}
+
+.item_price {
+    color: #17753b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.item_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item_home {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+}
+
+.item_plan {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+/* inner_content */
+
+.download_item {
+    background-color: #f1dfbc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;
+}
+
+.images_download {
+    max-width: 300px;
+    height: auto;
+}
+
+.item_button {
+    width: 600px;
+    height: auto;
+    background-color: #17753b;
+    text-align: center;
+    padding: 20px 30px;
+    border: 5px solid #effd15;
+    margin-bottom: 40px;
+}
+
+.item_button:hover {
+    background-color: rgb(20, 172, 65);
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* portfolio */
+
+.portfolio {
+    margin: 120px 0 50px 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.portfolio_title {
+    color: #d0662d;
+    font-size: 41px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.portfolio_item {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.portfolio_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+/* footer */
+
+.phone {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.footer_email {
+    color: #2f8bc5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
