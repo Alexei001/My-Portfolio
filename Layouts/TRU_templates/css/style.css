@@ -18,7 +18,7 @@ hr {
 body {
     background-color: #E5E5E5;
     margin: 0;
-    font-family:'Open Sans';
+    font-family: 'Open Sans';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,12 +35,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1 px solid #990000;
-    ;
+    padding: 30px;
+    border-bottom: 1px solid #990000;
 }
 
-.nav-item {
-    padding-right: 243px;
+.nav_item {
+    padding-right: 200px;
 }
 
 .nav_item_list {
@@ -54,21 +54,26 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
 }
 
-.menu_item {
-    font-family: ' Open Sans';
-    font-style: normal;
-    font-weight: bold;
+.nav_item_list li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 41px;
+    font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: 0.03em;
     color: #000000;
-    text-decoration: none;
-    padding-left: 41px;
 }
-
+.nav_item_list li a:hover{
+    color: #990000;
+}
 .content {
     display: flex;
     flex-direction: column;
+    background-image: url('/img/Content_bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 215px 0;
 }
 
 .content_title {
@@ -91,30 +96,61 @@ h1, h2, h3, h4, h5, h6 {
 
 /* butttommmmm */
 
-.content {
-    margin: 215px 0;
+
+button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: #990000;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 2px;
 }
 
-.button button {
-    background-color: #990000;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 16px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+button:hover {
+    background-color: #d81313;
+    color: #141212dc;
 }
 
 /* philosofy */
 
 .philosofy {
+    background-image: url('/img/philosofy_bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: #990000;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
-    margin: 150px 0;
+    padding: 150px 0;
+}
+
+.philosofy_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.philosofy_inner:last-child {
+    align-items: flex-end;
+}
+
+.philosofy_inner_about {
+    width: 50%;
+}
+
+.philosofy_inner_button button {
+    background-color: #fff;
+    color: #990000;
+}
+
+.philosofy_inner_button button:hover {
+    background-color: rgb(131, 27, 27);
+    color: #fcf1f1;
 }
 
 .philosofy_title {
@@ -122,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 36px;
     line-height: 49px;
+    padding-bottom: 26px;
 }
 
 .philosofy_text {
@@ -135,9 +172,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .working_dynamics {
     font-family: 'Open Sans', sans-serif;
+    background-image: url('/img/Vector_bg.png'), url('/img/Group1_.png'), url('/img/Vector2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #000000;
     letter-spacing: 0.03em;
-    margin: 107px 0 140px 0;
+    padding: 107px 0 140px 0;
 }
 
 .working_dynamics_title {
@@ -168,9 +209,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 29px;
 }
+
 /* -footer */
-.footer{
-    margin: 30px 0;
-    text-align:center;
-    font-weight: bold;
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    font-weight: normal;
+    border-top: 1px solid #990000;
+    display: flex;
+    justify-content: center;
 }
